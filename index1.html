@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <header class="bg-blue-200 w-11/12 mx-auto mt-5 shadow-2xl">
+      <nav class="flex justify-between items-center">
+   <div>
+    <p class="m-4"><b>Interactive</b><br> Geometry Genius</p>
+   </div>
+   <div>
+    <button class="btn bg-blue-400 rounded border-0  m-4 hover:bg-blue-500">Blog</button>
+
+   </div>
+      </nav>  
+    </header>
+    <main>
+   <section class='lg:px-6 flex flex-col lg:flex-row'>
+    <div class="mt-5 w-3/4 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+        <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="triangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="first-header" class="card-title mx-auto">Triangle</h2>
+              <p class="mx-auto text-2xl">Area (A) = 0.50 × b × h</p>
+              <p class="mx-auto "><input id="first-input-field1" type="text" placeholder="b" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input id="second-input-field1" type="text" placeholder="h" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+            
+              <div class="card-actions justify-end">
+                <button id="first-calculate" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+
+          <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="rectangle.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="second-geometry-name" class="card-title mx-auto">Rectangle</h2>
+              <p class="mx-auto text-2xl">Area (A) = w × I</p>
+              <p class="mx-auto "><input type="text" id="first-input-field2" placeholder="w" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input type="text" id="second-input-field2" placeholder="l" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+            
+              <div class="card-actions justify-end">
+                <button id="second-calculate" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+
+          <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="parallelogram.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="third-geometry-name" class="card-title mx-auto">Parallelogram</h2>
+              <p class="mx-auto text-2xl">Area (A) = b × h</p>
+              <p class="mx-auto "><input type="text" id="first-input-field3"  placeholder="b" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input type="text" id="second-input-field3" placeholder="h" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+            
+              <div class="card-actions justify-end">
+                <button id="third-calculate" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+     
+          <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="rhombus.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="fourth-geometry-name" class="card-title mx-auto">Rhombus</h2>
+              <p class="mx-auto text-2xl">Area (A) = 0.5 × d1 × d2</p>
+              <p class="mx-auto "><input  id="first-input-field4" type="text" placeholder="d1" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input id="second-input-field4" type="text" placeholder="d2" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+              <div class="card-actions justify-end">
+                <button id="four-calculation" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+
+          <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="pentagon.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="fifth-geometry-name" class="card-title mx-auto">Pentagon</h2>
+              <p class="mx-auto text-2xl">Area (A) = 0.50 × p × b</p>
+              <p class="mx-auto "><input id="first-input-field5" type="text" placeholder="p" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input  id="second-input-field5" type="text" placeholder="b" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+              <div class="card-actions justify-end">
+                <button id="five-calculation" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+
+          <div class="card card-compact w-full bg-base-100 shadow-xl ">
+            <figure><img src="ellipse.png" alt="Shoes" /></figure>
+            <div class="card-body">
+              <h2 id="sixth-geometry-name" class="card-title mx-auto">Ellipse</h2>
+              <p class="mx-auto text-2xl">Area (A) =πab</p>
+              <p class="mx-auto "><input id="first-input-field6" type="text" placeholder="a" class="input m-4 input-bordered w-20 max-w-xs" /><span class="text-2xl">cm</span> <input id="second-input-field6" type="text" placeholder="b" class="input input-bordered m-4 w-20 max-w-xs" /><span class="text-2xl">cm</span></p>
+            
+              <div class="card-actions justify-end">
+                <button id="six-calculation" class="btn btn-wide mx-auto bg-blue-500 border-0 hover:bg-blue-600">Calculate</button>
+            </div>
+            </div>
+          </div>
+
+
+
+    </div>
+  <!--  -->
+  <div class="w-1/4 mt-5 mx-auto ">
+    <h4 class="fond-bold text-center text-3xl underline">Area Calculation</h4>
+  <!-- <div class="text-2xl gap-12" id="container">
+    
+  </div> -->
+  <div class="overflow-x-auto">
+    <table class="table w-full">
+      <!-- head -->
+      <thead>
+        <!-- <tr>
+          <th>SI NO</th>
+          <th>Name</th>
+          <th>Area(A)</th>
+          <th>Button</th>
+        </tr> -->
+      </thead>
+      <tbody id="container">
+        <tr>
+          <th>1</th>
+          <td>Triangle</td>
+          <td>50cm</td>
+          <td>Button</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+   
+   </section>
+        
+          
+    </main>
+    <script src="main1.js"></script>
+</body>
+</html>
