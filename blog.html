@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+   
+<div class="container mt-3">
+    <h2>Welcome To Blog Page</h2>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            1.What is DOM? What is purpose of DOM?
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+            DOM stands for Document Object Model. 
+            It is a programming interface that allows us to create,
+             change, or remove elements from the document. We can also
+              add events to these elements to make our page more dynamic.
+
+          </div>
+        </div>
+    </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+          2.How to select DOM element?
+        </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+        There are 5 ways in which you can select elements in a DOM using selectors.<br>
+        1.getElementById()<br>
+        2.getElementsByClassName()<br>
+        3.getElementsByTagName()<br>
+        4.querySelectorAll()<br>
+        5.querySelector()
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            3.What is event bauble?
+          </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+          <div class="card-body">
+            Event bubbling is a method of event propagation in the HTML DOM API when an event is in an element inside another element, and both elements have registered a handle to that event. It is a process that starts with the element that triggered the event and then bubbles up to the containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the innermost element and then propagated to outer elements.
+        </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            4.what is callback function?why use callback function?
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+          <div class="card-body">
+        <!--  -->
+        A callback is a function passed as an argument to another function
+        This technique allows a function to call another function
+        A callback function can run after another function has finished
+          </div>
+        </div>
+    </div
+
+    </div>
+  </div> 
+</body>
+</html>

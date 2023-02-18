@@ -9,7 +9,8 @@ document.getElementById('first-calculate').addEventListener('click',function(){
  const constantValue=parseFloat("0.50");
  const btn="convert";
  const firstGeometryCalculation=constantValue*(triangleFirstInput*triangleSecondInput);
- displayData(siNo,firstGeometryName,firstGeometryCalculation,btn);
+ const firstGeometryFinalCalculation=firstGeometryCalculation.toFixed(2);
+ displayData(siNo,firstGeometryName,firstGeometryFinalCalculation,btn);
 //  
 triangleInputField1.value='';
 triangleInputField2.value='';
@@ -81,6 +82,7 @@ document.getElementById('five-calculation').addEventListener('click',function(){
  const constantValue=parseFloat("0.50");
  const btn="convert";
  const fiveGeometryCalculation=constantValue*firstInput*secondInput;
+
  displayData(siNo,fifthGeometryName,fiveGeometryCalculation,btn)
 
  
@@ -164,12 +166,9 @@ function displayData(siNo,geometryName,calculation,button){
 
 
 
-
-
-
-
-
-
+document.getElementById('blog').addEventListener('click',function(){
+   window.location.href='blog.html'
+})
 
 
 
@@ -185,3 +184,25 @@ function displayData(siNo,geometryName,calculation,button){
 //  `
 //  container.appendChild(tr);
 //  tr.style.margin='10';
+
+// const getColor=() => {
+//     const randomNumber=Math.floor(Math.random()*16777215)
+//     const randomCode= "#" +randomNumber.toString(16);
+//     document.body.style.backgroundColor=randomCode;
+//     document.getElementById('').innerText=randomCode;
+
+
+// }
+// document.getElementsByClassName("card").addEventListener("click",getColor){
+   
+// }
+// getColor();
+const setBg = () => {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.getElementById('card').style.backgroundColor = "#" + randomColor;
+    color.innerHTML = "#" + randomColor;
+  }
+  
+  card.addEventListener("mouseover", setBg);
+  setBg();
+ 
